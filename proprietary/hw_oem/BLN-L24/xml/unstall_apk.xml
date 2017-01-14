@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+    <tag>
+        <apk>
+             /system/app/NfcNci.apk;
+             /system/priv-app/Tag/Tag.apk;
+       </apk>
+    </tag>

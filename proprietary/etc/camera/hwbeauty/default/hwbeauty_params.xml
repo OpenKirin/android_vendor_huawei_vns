@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GB2312"?>
+<HwBeautyParams>
+	<Mode name="Preview">
+	<Level1 SkinSoften="20" SkinWhiten="18" FaceSlender="4" />
+	<Level2 SkinSoften="25" SkinWhiten="27" FaceSlender="5" />
+	<Level3 SkinSoften="30" SkinWhiten="36" FaceSlender="6" />
+	<Level4 SkinSoften="38" SkinWhiten="30" FaceSlender="7" />
+	<Level5 SkinSoften="45" SkinWhiten="38" FaceSlender="8" />
+	<Level6 SkinSoften="50" SkinWhiten="44" FaceSlender="9" />
+	<Level7 SkinSoften="55" SkinWhiten="52" FaceSlender="10" />
+	<Level8 SkinSoften="60" SkinWhiten="60" FaceSlender="11" />
+	<Level9 SkinSoften="65" SkinWhiten="65" FaceSlender="12" />
+	<Level10 SkinSoften="70" SkinWhiten="70" FaceSlender="13" />
+	</Mode>
+	<Mode name="Capture">
+	<Level1 SkinSoften="25" SkinWhiten="26" SkinRuddy="7" Contrast="2" EyeBrighten="5" FaceSlender="6" EyeEnlargement="12" />
+	<Level2 SkinSoften="35" SkinWhiten="31" SkinRuddy="10" Contrast="5" EyeBrighten="10" FaceSlender="7" EyeEnlargement="15" />
+	<Level3 SkinSoften="45" SkinWhiten="36" SkinRuddy="13" Contrast="7" EyeBrighten="15" FaceSlender="8" EyeEnlargement="18" />
+	<Level4 SkinSoften="50" SkinWhiten="41" SkinRuddy="17" Contrast="9" EyeBrighten="20" FaceSlender="9" EyeEnlargement="21" />
+	<Level5 SkinSoften="55" SkinWhiten="45" SkinRuddy="20" Contrast="10" EyeBrighten="25" FaceSlender="10" EyeEnlargement="24" />
+	<Level6 SkinSoften="60" SkinWhiten="47" SkinRuddy="22" Contrast="11" EyeBrighten="27" FaceSlender="11" EyeEnlargement="26" />
+	<Level7 SkinSoften="65" SkinWhiten="49" SkinRuddy="24" Contrast="11" EyeBrighten="30" FaceSlender="12" EyeEnlargement="29" />
+	<Level8 SkinSoften="70" SkinWhiten="51" SkinRuddy="26" Contrast="12" EyeBrighten="32" FaceSlender="13" EyeEnlargement="31" />
+	<Level9 SkinSoften="75" SkinWhiten="53" SkinRuddy="28" Contrast="12" EyeBrighten="35" FaceSlender="14" EyeEnlargement="32" />
+	<Level10 SkinSoften="80" SkinWhiten="55" SkinRuddy="30" Contrast="13" EyeBrighten="37" FaceSlender="15" EyeEnlargement="33" />
+	</Mode>
+	<Mode name="Dark">
+	<Level1 SkinSoften="40" SkinWhiten="10" SkinRuddy="3" Contrast="2" EyeBrighten="3" FaceSlender="6" EyeEnlargement="12" />
+	<Level2 SkinSoften="45" SkinWhiten="13" SkinRuddy="4" Contrast="2" EyeBrighten="4" FaceSlender="7" EyeEnlargement="13" />
+	<Level3 SkinSoften="50" SkinWhiten="15" SkinRuddy="5" Contrast="3" EyeBrighten="6" FaceSlender="8" EyeEnlargement="14" />
+	<Level4 SkinSoften="58" SkinWhiten="18" SkinRuddy="6" Contrast="3" EyeBrighten="8" FaceSlender="9" EyeEnlargement="21" />
+	<Level5 SkinSoften="65" SkinWhiten="20" SkinRuddy="7" Contrast="4" EyeBrighten="10" FaceSlender="10" EyeEnlargement="24" />
+	<Level6 SkinSoften="70" SkinWhiten="22" SkinRuddy="7" Contrast="4" EyeBrighten="11" FaceSlender="11" EyeEnlargement="26" />
+	<Level7 SkinSoften="75" SkinWhiten="24" SkinRuddy="8" Contrast="5" EyeBrighten="12" FaceSlender="12" EyeEnlargement="29" />
+	<Level8 SkinSoften="80" SkinWhiten="26" SkinRuddy="9" Contrast="5" EyeBrighten="13" FaceSlender="13" EyeEnlargement="31" />
+	<Level9 SkinSoften="85" SkinWhiten="28" SkinRuddy="9" Contrast="6" EyeBrighten="14" FaceSlender="14" EyeEnlargement="32" />
+	<Level10 SkinSoften="90" SkinWhiten="30" SkinRuddy="10" Contrast="6" EyeBrighten="15" FaceSlender="15" EyeEnlargement="33" />
+	</Mode>
+</HwBeautyParams>
+

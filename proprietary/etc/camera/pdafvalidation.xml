@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!--2x2 PDAF block with no shift-->
+<HWA_PDAF_VALIDATION previewWidth="1440" previewHeight="1080" totalCount="1">
+	<VCM_INFO total="3">
+		<INFO flag_control="0" direct_code="300" delta_code="20" percent_value="100" delta_code_2="-30"/>
+		<INFO flag_control="3" direct_code="300" delta_code="20" percent_value="10" delta_code_2="-65"/>
+		<INFO flag_control="3" direct_code="850" delta_code="-20" percent_value="-155" delta_code_2="150"/>
+
+	</VCM_INFO>
+	<CHECK_INFO total="8">
+		<INFO flag_control="1" thresh_value="40"/>
+		<INFO flag_control="0" thresh_value="40"/>
+		<INFO flag_control="0" thresh_value="40"/>
+		<INFO flag_control="0" thresh_value="40"/>
+		<INFO flag_control="1" thresh_value="40"/>
+		<INFO flag_control="0" thresh_value="40"/>
+		<INFO flag_control="0" thresh_value="40"/>
+		<INFO flag_control="0" thresh_value="40"/>
+	</CHECK_INFO>
+	<FOCUS_AREA total="8">
+		<Area id ="1" top="450" left="775" width="180" height="180"/>
+		<Area id ="2" top="0" left="0" width="0" height="0"/>
+		<Area id ="2" top="0" left="0" width="0" height="0"/>
+		<Area id ="2" top="0" left="0" width="0" height="0"/>
+		<Area id ="1" top="450" left="775" width="180" height="180"/>
+		<Area id ="2" top="0" left="0" width="0" height="0"/>
+		<Area id ="2" top="0" left="0" width="0" height="0"/>
+		<Area id ="2" top="0" left="0" width="0" height="0"/>
+	</FOCUS_AREA>
+	<SHIFT_VALUE total="3">
+		<VALUE x_value="0" y_value="0"/>
+		<VALUE x_value="10" y_value="10"/>
+		<VALUE x_value="-20" y_value="-20"/>
+	</SHIFT_VALUE>
+</HWA_PDAF_VALIDATION>

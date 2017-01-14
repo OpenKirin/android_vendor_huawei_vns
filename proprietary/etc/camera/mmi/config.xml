@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="GB2312"?>
+<CONFIG_PARA>
+        <TEST_LIST value="DEPTH PDAF"/>
+        <!--<TEST_LIST value="AFC DEPTH,AFC PDAF,AFC OIS"/>-->
+        <DEPTH_NEED_AFC value="0"/>
+</CONFIG_PARA>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HSM version="1.2">
+    <ResetInfos>
+        <ResetInfo id="0x0e" name="hungdetect" description="detect android boot over 120s" />
+        <ResetInfo id="0x15" name="AP_S_TSENSOR0" description="tsensor reset" />
+        <ResetInfo id="0x16" name="AP_S_TSENSOR1" description="tsensor reset" />
+        <ResetInfo id="0x17" name="AP_S_AWDT" description="ap dog reset" />
+        <ResetInfo id="0x18" name="LPM3_S_GLOBALWDT" description="global dog reset" />
+        <ResetInfo id="0x19" name="G3D_S_G3DTSENSOR" description="g3d tsensor reset" />
+        <ResetInfo id="0x1a" name="LPM3_S_LPMCURST" description="lpm3 dog reset" />
+        <ResetInfo id="0x1b" name="CP_S_CPTSENSOR" description="cp tsensor reset" packmodem="1" />
+        <ResetInfo id="0x1c" name="IOM3_S_IOMCURST" description="iom3 dog reset" />
+        <ResetInfo id="0x1d" name="ASP_S_ASPWD" description="asp dog reset" />
+        <ResetInfo id="0x1e" name="CP_S_CPWD" description="cp dog reset" packmodem="1" />
+        <ResetInfo id="0x1f" name="IVP_S_IVPWD" description="ivp dog reset" />
+        <ResetInfo id="0x20" name="ISP_S_ISPWD" description="isp dog reset" />
+        <ResetInfo id="0x21" name="AP_S_DDR_SELFREFLASH" description="ddr exception reset" />
+        <ResetInfo id="0x24" name="AP_S_PANIC" description="AP Panic" />
+        <ResetInfo id="0x25" name="AP_S_NOC" description="main bus reset" />
+        <ResetInfo id="0x26" name="AP_S_PMU" description="pmu reset" />
+        <ResetInfo id="0x27" name="AP_S_DDRC_SEC" description="ddrc exception protecting reset" />
+        <ResetInfo id="0x28" name="AP_S_GPIO" description="gpio exception reset" />
+        <ResetInfo id="0x2a" name="AP_S_DIE" description="ap die reset" />
+        <ResetInfo id="0x2f" name="CP_S_EXCEPTION" description="cp exception single reset" packmodem="1" />
+        <ResetInfo id="0x30" name="CP_S_RESETFAIL" description="cp exception reset failure" packmodem="1" />
+        <ResetInfo id="0x32" name="LPM3_S_EXCEPTION" description="lpm3 exception reset" />
+        <ResetInfo id="0x33" name="HIFI_S_EXCEPTION" description="hifi exception single reset" />
+        <ResetInfo id="0x34" name="HIFI_S_RESETFAIL" description="hifi exception single reset failure" />
+        <ResetInfo id="0x35" name="ISP_S_EXCEPTION" description="isp exception reset" />
+        <ResetInfo id="0x36" name="IVP_S_EXCEPTION" description="ivp exception reset" />
+        <ResetInfo id="0x37" name="IOM3_S_EXCEPTION" description="iom3 exception reset" />
+        <ResetInfo id="0x38" name="TEE_S_EXCEPTION" description="teeos exception reset" />
+        <!--<ResetInfo id="0x39" name="CP_S_NORMALRESET" description="cp normal reset" />-->
+    </ResetInfos>
+    <Pack>
+        <Sms>
+            <SmsKeyWords>
+                <SmsKeyWord>Call Lost</SmsKeyWord>
+                <SmsKeyWord>来电提醒</SmsKeyWord>
+                <SmsKeyWord>联通秘书</SmsKeyWord>
+                <SmsKeyWord>呼叫过您</SmsKeyWord>
+            </SmsKeyWords>
+            <SmsTimeFormats>
+                <SmsTimeFormat>[0-9]{4}年[0-9]{2}月[0-9]{2}日[0-9]{2}:[0-9]{2}</SmsTimeFormat>
+                <SmsTimeFormat>[0-9]{4}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}_[0-9]{2}</SmsTimeFormat>
+                <SmsTimeFormat>[0-9]{4}_[0-9]{2}_[0-9]{2} [0-9]{2}_[0-9]{2}_[0-9]{2}</SmsTimeFormat>
+                <SmsTimeFormat>[0-9]{2}月[0-9]{2}日[0-9]{2}时[0-9]{2}分</SmsTimeFormat>
+                <SmsTimeFormat>[0-9]{2}月[0-9]{2}日[0-9]{2}点[0-9]{2}分</SmsTimeFormat>
+            </SmsTimeFormats>
+            <SmsTimeFilters>
+                <SmsTimeFilter>年</SmsTimeFilter>
+                <SmsTimeFilter>月</SmsTimeFilter>
+                <SmsTimeFilter>日</SmsTimeFilter>
+                <SmsTimeFilter>时</SmsTimeFilter>
+                <SmsTimeFilter>分</SmsTimeFilter>
+                <SmsTimeFilter>点</SmsTimeFilter>
+                <SmsTimeFilter>_</SmsTimeFilter>
+                <SmsTimeFilter>:</SmsTimeFilter>
+            </SmsTimeFilters>
+        </Sms>
+    </Pack>
+    <HIFI>
+        <BSD>
+            <Causes>
+                <Cause id="0">
+                    <CauseDesc>未知</CauseDesc>
+                    <CauseAnalyse>当前还缺乏有效分析手段，敬请期待</CauseAnalyse>
+                    <CauseSuggestion>为提高维测效率，尽快上传</CauseSuggestion>
+                </Cause>
+                <Cause id="1">
+                    <CauseDesc>小区切换</CauseDesc>
+                    <CauseAnalyse>发生[cellswitch_num]次切换，切换总时长[cellswitch_duration]ms</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="2">
+                    <CauseDesc>网络下行进入DTX态</CauseDesc>
+                    <CauseAnalyse>发现[dtx_num]帧DTX</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="3">
+                    <CauseDesc>网络下行发homing帧，声码器重置</CauseDesc>
+                    <CauseAnalyse>发现[homing_num]帧homing帧</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="4">
+                    <CauseDesc>网络下发偷帧，语音帧被信令占用</CauseDesc>
+                    <CauseAnalyse>发现[facch_num]帧facch帧</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="5">
+                    <CauseDesc>有少量误码，怀疑网络问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="6">
+                    <CauseDesc>高电平下有中等误码，怀疑modem问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
+                </Cause>
+                <Cause id="7">
+                    <CauseDesc>中电平下有中等误码，怀疑modem问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]%，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
+                </Cause>
+                <Cause id="8">
+                    <CauseDesc>低电平下有少量误码，怀疑网络问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="9">
+                    <CauseDesc>高电平下有大量误码，怀疑modem问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
+                </Cause>
+                <Cause id="10">
+                    <CauseDesc>中电平下有大量误码，怀疑modem问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
+                </Cause>
+                <Cause id="11">
+                    <CauseDesc>低电平下有大量误码，怀疑网络问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="12">
+                    <CauseDesc>对端或网络问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="13">
+                    <CauseDesc>HIFI DMA搬移问题</CauseDesc>
+                    <CauseAnalyse>发现[hifi_dma_num]次HIFI DMA没有搬移数据。</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快提单</CauseSuggestion>
+                </Cause>
+            </Causes>
+            <Phenomenons>
+                <Phenomenon id="0">无效</Phenomenon>
+                <Phenomenon id="1">单通</Phenomenon>
+                <Phenomenon id="2">断续</Phenomenon>
+                <Phenomenon id="3">噪声</Phenomenon>
+                <Phenomenon id="4">电流音</Phenomenon>
+                <Phenomenon id="5">模糊</Phenomenon>
+                <Phenomenon id="6">流水声</Phenomenon>
+                <Phenomenon id="8">低分</Phenomenon>
+                <Phenomenon id="9">时序冲突</Phenomenon>
+                <Phenomenon id="10">啸声</Phenomenon>
+            </Phenomenons>
+            <CodecTypes>
+                <CodecType id="0">AMRNB</CodecType>
+                <CodecType id="1">EFR</CodecType>
+                <CodecType id="2">FR</CodecType>
+                <CodecType id="3">HR</CodecType>
+                <CodecType id="4">AMR2</CodecType>
+                <CodecType id="5">AMRWB</CodecType>
+                <CodecType id="6">G711</CodecType>
+                <CodecType id="7">EVRC</CodecType>
+                <CodecType id="8">EVRCB</CodecType>
+            </CodecTypes>
+            <NetModes>
+                <NetMode id="0">GSM</NetMode>
+                <NetMode id="1">WCDMA</NetMode>
+                <NetMode id="2">TDSCDMA</NetMode>
+                <NetMode id="3">IMSEUTRAN</NetMode>
+                <NetMode id="4">CDMA</NetMode>
+            </NetModes>
+            <BSDPositions>
+                <BSDPosition id="0">INVALID</BSDPosition>
+                <BSDPosition id="1">MICIN</BSDPosition>
+                <BSDPosition id="2">SPKOUT</BSDPosition>
+                <BSDPosition id="3">CODEIN</BSDPosition>
+                <BSDPosition id="4">CODEOUT</BSDPosition>
+                <BSDPosition id="5">ECREF</BSDPosition>
+                <BSDPosition id="6">LINEIN</BSDPosition>
+                <BSDPosition id="7">LINEOUT</BSDPosition>
+                <BSDPosition id="8">MODEM</BSDPosition>
+                <BSDPosition id="9">HIFI</BSDPosition>
+            </BSDPositions>
+            <DescriptionTemplate>
+                [本次通话可能存在]：[phenomenon] 
+                [自动分析原因]：[cause_description] 
+                [分析依据]：通信方式为[net_mode]，声码器类型为[codec_type]，检测到问题的位置为[position]，[cause_analyse] 
+                [建议]：[cause_suggestion]。
+            </DescriptionTemplate>
+        </BSD>
+    </HIFI>
+</HSM>

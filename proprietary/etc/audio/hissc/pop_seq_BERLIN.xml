@@ -1,0 +1,26 @@
+<pop>
+  <up>
+	<num name="num" value="9"/>
+        <ctl name="SMT_MIXOUT_EAR_PU MIXER DACL"/>
+        <ctl name="SMT_MIXOUT_EAR_PU MIXER DACR"/>
+        <ctl name="CLASSD VIR_SWITCH CLASSD_EN"/>
+	<ctl name="SMT_SIF_EN MIXER SIF_HSLR_EN"/>
+	<ctl name="HS_DAC_SEL_VIR SWITCH DAC"/>
+	<ctl name="SMT_MIXOUT_HSLR_PD MIXER DACLR"/>
+	<ctl name="HS_LINEIN_SEL_VIR SWITCH LINEIN"/>
+	<ctl name="SMT_MIXOUT_HSLR_PD MIXER LINEINLR"/>
+	<ctl name="S2_IF_TX_ENA MIXER VOICE_DLINK"/>
+  </up>
+  <down>
+	<num name="num" value="9"/>
+	<ctl name="SMT_MIXOUT_HSLR_PD MIXER DACLR"/>  
+	<ctl name="HS_DAC_SEL_VIR SWITCH DAC"/>
+	<ctl name="SMT_SIF_EN MIXER SIF_HSLR_EN"/>
+	<ctl name="SMT_MIXOUT_HSLR_PD MIXER LINEINLR"/>
+	<ctl name="HS_LINEIN_SEL_VIR SWITCH LINEIN"/>
+	<ctl name="CLASSD VIR_SWITCH CLASSD_EN"/>
+	<ctl name="SMT_MIXOUT_EAR_PU MIXER DACR"/>
+	<ctl name="SMT_MIXOUT_EAR_PU MIXER DACL"/>
+	<ctl name="S2_IF_TX_ENA MIXER VOICE_DLINK"/>
+  </down>
+</pop>
