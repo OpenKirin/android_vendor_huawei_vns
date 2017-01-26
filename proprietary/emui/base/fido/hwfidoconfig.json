@@ -1,0 +1,17 @@
+{
+  "whiteList": true,
+  "accepted":
+  [
+    {"packName": "com.huawei.testharness","apk-hash": "android:apk-key-hash:z1pn3+lEl4skDA46t6JmA0EPi7M"},
+    {"packName": "com.noknok.android.sampleapp","apk-hash": "android:apk-key-hash:iKp3zCOLJ+LbifBnOA1iseOINwE"},
+    {"packName": "com.paypal.android.p2pmobile","apk-hash": "android:apk-key-hash:a6zid4zFwQWypEJQvc//XE1cQDo"},
+    {"packName": "com.paypal.android.p2pmobile","apk-hash": "android:apk-key-hash:/XFc5x8M3LwirwLmiyMfWJGH/p8"},
+    {"packName": "com.wangyin.payment","apk-hash": "android:apk-key-hash:WtGxaY4d26K9TMBJKrNQoQRtM30"},
+    {"packName": "com.huawei.uafclienttest","apk-hash": "android:apk-key-hash:sBr0WEqUZQ/P6tKRr4mw/sHwYYc"},
+    {"packName": "com.baidu.wallet","apk-hash": "android:apk-key-hash:eTMgae8TbHu8vt1yV3RMvKCj19A"},
+    {"packName": "com.chinatelecom.bestpayclient","apk-hash": "android:apk-key-hash:fPk99VGnkrh/KTpFVRSpS+FYVjM"},
+    {"packName": "com.raon.fido.rpclient","apk-hash": "android:apk-key-hash:Df+2X53Z0UscvUu6obxC3rIfFyk"},
+    {"packName": "com.bill99.kuaiqian","apk-hash": "android:apk-key-hash:BbGvdGnMxeozujIF8up5ZHNbyqo"},
+    {"packName": "com.ftsafe.uaf.uafdemo","apk-hash": "android:apk-key-hash:m8Jhom/txEhttna0wg505d1RciQ"}
+  ]
+}

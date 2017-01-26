@@ -1,0 +1,16 @@
+ro.product.locale.language=en
+ro.product.locale.region=US
+ro.config.hw_optb=999
+#DTS2015091004462 z00208524 20150910 begin
+ro.config.hw_multiscreen=false
+#DTS2015091004462 z00208524 20150910 end
+#AR0003ECN0  xiekaiming WX278091 20151118 begin
+ro.com.google.clientidbase.am=android-huawei
+ro.com.google.clientidbase.gmm=android-huawei
+ro.com.google.clientidbase.ms=android-huawei
+ro.com.google.clientidbase.yt=android-huawei
+ro.com.google.clientidbase=android-huawei
+#AR0003ECN0  xiekaiming WX278091 20151118  end
+ro.config.show_epg_menu=false
+ro.config.hw_nfc_on=true
+ro.setupwizard.mode=DISABLED
