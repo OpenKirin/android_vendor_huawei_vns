@@ -20,4 +20,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     HWJNIFLPLocation
 
+PRODUCT_PACKAGES += \
+    libril
+
 $(call inherit-product, vendor/honor/berlin/berlin-vendor-blobs.mk)
