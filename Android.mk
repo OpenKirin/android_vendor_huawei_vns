@@ -27,6 +27,36 @@ LOCAL_CERTIFICATE := platform
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := com.google.android.media.effects
+LOCAL_MODULE_OWNER := honor
+LOCAL_SRC_FILES := system/framework/com.google.android.media.effects.jar
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.hisi.perfhub
+LOCAL_MODULE_OWNER := honor
+LOCAL_SRC_FILES := system/framework/com.hisi.perfhub.jar
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.huawei.audioalgo
+LOCAL_MODULE_OWNER := honor
+LOCAL_SRC_FILES := system/framework/com.huawei.audioalgo.jar
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := HWJNIFLPLocation
 LOCAL_MODULE_OWNER := honor
 LOCAL_SRC_FILES := system/framework/HWJNIFLPLocation.jar

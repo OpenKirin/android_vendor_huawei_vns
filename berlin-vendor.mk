@@ -14,8 +14,13 @@
 
 PRODUCT_PACKAGES += \
     gnss_supl20service_hisi \
-    HWJNIFLPLocation \
     GeofenceLocation
+
+PRODUCT_PACKAGES += \
+    com.google.android.media.effects \
+    com.hisi.perfhub \
+    com.huawei.audioalgo \
+    HWJNIFLPLocation
 
 PRODUCT_BOOT_JARS += \
     HWJNIFLPLocation
