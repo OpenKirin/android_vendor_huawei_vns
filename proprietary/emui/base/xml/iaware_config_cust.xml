@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- !!!!!!!!!!!!warnning!!!!!!!!!!!!  -->
+<!-- this config is used to config big memory -->
+<!-- upon the item iaware, no allowed add any item -->
+<!-- if you want to accelerate camera launch-->
+<!-- please copy the following xml to your own product folder-->
+<iaware iawareversion="1.0">
+    <feature name="Memory">
+   <!-- <config name="BigMemApp">
+            <item appname="com.huawei.camera">
+                <launch>900</launch>
+            </item>
+        </config> -->
+    </feature>
+    <feature name="CPU">
+        <config name="sub_switch">
+            <item type="switch">
+                <log bit="0">0</log>
+                <freq_interactive bit="1">0</freq_interactive>
+                <scroller_boost bit="3">0</scroller_boost>
+                <key_thread_boost bit="4">1</key_thread_boost>
+                <ta_app_start_boost bit="5">1</ta_app_start_boost>
+                <cocos_game bit="6">0</cocos_game>
+                <eapa bit="7">0</eapa>
+                <vr bit="8">0</vr>
+                <cpuctl_bg bit="10">0</cpuctl_bg>
+            </item>
+        </config>
+        <config name="enable_pg_freq">
+            <item>
+                <enable>true</enable>
+            </item>
+        </config>
+        <config name="cpuset_screen_on">
+            <item type="cpuset">
+                <fg>0-7</fg>
+                <bg>2-3</bg>
+                <key_bg>2-3,7</key_bg>
+                <sys_bg>0-3</sys_bg>
+                <top_app>0-7</top_app>
+                <ta_boost>4-7</ta_boost>
+                <boost>4-7</boost>
+            </item>
+        </config>
+        <config name="cpuset_VR">
+            <item type="cpuset">
+                <fg>0-2,4-7</fg>
+                <bg>0-2</bg>
+                <key_bg>0-2</key_bg>
+                <sys_bg>0-2</sys_bg>
+                <top_app>0-7</top_app>
+                <boost>4-7</boost>
+            </item>
+        </config>
+        <config name="cpuset_screen_off">
+            <item type="cpuset">
+                <fg>0-7</fg>
+                <bg>0-3</bg>
+                <key_bg>0-3</key_bg>
+                <sys_bg>0-3</sys_bg>
+                <top_app>0-7</top_app>
+                <boost>0-7</boost>
+            </item>
+        </config>
+        <!-- enable by freq_interactive sub_switch -->
+        <config name="freq_interactive">
+            <item>
+                <go_hispeed_load_l>90</go_hispeed_load_l>
+                <go_hispeed_load_b>85</go_hispeed_load_b>
+                <hispeed_freq_l>1402000</hispeed_freq_l>
+                <hispeed_freq_b>1805000</hispeed_freq_b>
+                <target_load_freq_l>90:1402000:85</target_load_freq_l>
+                <target_load_freq_b>85:1805000:90:2112000:80</target_load_freq_b>
+            </item>
+        </config>
+        <config name="power_nosave_freq">
+            <item>
+                <go_hispeed_load_l>95</go_hispeed_load_l>
+                <go_hispeed_load_b>90</go_hispeed_load_b>
+                <hispeed_freq_l>1402000</hispeed_freq_l>
+                <hispeed_freq_b>1421000</hispeed_freq_b>
+                <target_load_freq_l>75:999000:85:1402000:90:1709000:95</target_load_freq_l>
+                <target_load_freq_b>85:1421000:90:1805000:95</target_load_freq_b>
+            </item>
+        </config>
+        <config name="power_save_freq">
+            <item>
+                <go_hispeed_load_l>95</go_hispeed_load_l>
+                <go_hispeed_load_b>90</go_hispeed_load_b>
+                <hispeed_freq_l>1402000</hispeed_freq_l>
+                <hispeed_freq_b>1421000</hispeed_freq_b>
+                <target_load_freq_l>75:999000:85:1402000:90:1709000:95</target_load_freq_l>
+                <target_load_freq_b>85:1421000:90:1805000:95</target_load_freq_b>
+            </item>
+        </config>
+        <config name="power_supersave_freq">
+            <item>
+                <go_hispeed_load_l>95</go_hispeed_load_l>
+                <go_hispeed_load_b>90</go_hispeed_load_b>
+                <hispeed_freq_l>1402000</hispeed_freq_l>
+                <hispeed_freq_b>1421000</hispeed_freq_b>
+                <target_load_freq_l>75:999000:85:1402000:90:1709000:95</target_load_freq_l>
+                <target_load_freq_b>85:1421000:90:1805000:95</target_load_freq_b>
+            </item>
+        </config>
+        <config name="scroller_boost">
+            <item>
+                <boost_big_core>true</boost_big_core>
+                <min_freq>1805000</min_freq>
+                <ipa_power>3500</ipa_power>
+                <boost_duration>1000</boost_duration>
+            </item>
+        </config>
+        <!-- enable by scroller_boost sub_switch -->
+        <config name="gesture_boost">
+            <item>
+                <boost_big_core>false</boost_big_core>
+                <min_freq>1805000</min_freq>
+                <boost_duration>1000</boost_duration>
+            </item>
+        </config>
+        <!-- enable by key_thread_boost sub_switch -->
+        <config name="boost_key_thread_list">
+            <item process_name="system_server">
+                <thread_name>ActivityManag</thread_name>
+                <thread_name>android.fg</thread_name>
+                <thread_name>fingerprintServ</thread_name>
+                <thread_name>SensorService</thread_name>
+                <thread_name>HWExtMotionServ</thread_name>
+                <thread_name>sManagerService</thread_name>
+            </item>
+            <item process_name="com.android.incallui">
+                <thread_name>ndroid.incallui</thread_name>
+            </item>
+        </config>
+        <!-- enable by key_thread_boost sub_switch -->
+        <config name="eapa_constant">
+            <item type="global">
+                <lowest_skipframe>4</lowest_skipframe>
+                <period_num>10</period_num>
+                <sample_interval>200</sample_interval>
+                <sample_num>5</sample_num>
+                <thresholds>55</thresholds>
+            </item>
+            <item type="b_cluster">
+                <lowfreq>1421</lowfreq>
+                <freq>903;1421;1805;2112;2362;</freq>
+            </item>
+        </config>
+        <config name="cocos_game">
+            <item cpu="-1">
+                <bind_big_core>0</bind_big_core>
+                <cpu_l_min_freq>533000</cpu_l_min_freq>
+                <cpu_b_min_freq>903000</cpu_b_min_freq>
+            </item>
+            <item cpu="0">
+                <bind_big_core>0</bind_big_core>
+                <cpu_l_min_freq>533000</cpu_l_min_freq>
+                <cpu_b_min_freq>903000</cpu_b_min_freq>
+            </item>
+            <item cpu="1">
+                <bind_big_core>0</bind_big_core>
+                <cpu_l_min_freq>1709000</cpu_l_min_freq>
+                <cpu_b_min_freq>903000</cpu_b_min_freq>
+            </item>
+            <item cpu="2">
+                <bind_big_core>1</bind_big_core>
+                <cpu_l_min_freq>533000</cpu_l_min_freq>
+                <cpu_b_min_freq>1421000</cpu_b_min_freq>
+            </item>
+            <item cpu="3">
+                <bind_big_core>1</bind_big_core>
+                <cpu_l_min_freq>533000</cpu_l_min_freq>
+                <cpu_b_min_freq>1805000</cpu_b_min_freq>
+            </item>
+            <item cpu="4">
+                <bind_big_core>1</bind_big_core>
+                <cpu_l_min_freq>533000</cpu_l_min_freq>
+                <cpu_b_min_freq>2112000</cpu_b_min_freq>
+            </item>
+            <item cpu="5">
+                <bind_big_core>1</bind_big_core>
+                <cpu_l_min_freq>533000</cpu_l_min_freq>
+                <cpu_b_min_freq>2362000</cpu_b_min_freq>
+            </item>
+            <item gpu="-1">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="0">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="1">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="2">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="3">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="4">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="5">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="6">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="7">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="8">
+                <gpu_min_freq>400000000</gpu_min_freq>
+            </item>
+            <item gpu="9">
+                <gpu_min_freq>533000000</gpu_min_freq>
+            </item>
+        </config>
+        <config name="cpuctl_background">
+            <item>
+                <cpu_highload_threshold>90</cpu_highload_threshold>
+                <cpu_highload_count_threshold>5</cpu_highload_count_threshold>
+                <cpu_highload_polling_interval>2</cpu_highload_polling_interval>
+                <thread_highload_threshold>35</thread_highload_threshold>
+                <cpuctl_bg_quota>190000</cpuctl_bg_quota>
+                <cpuctl_lbg_quota>180000</cpuctl_lbg_quota>
+            </item>
+        </config>
+    </feature>
+</iaware>

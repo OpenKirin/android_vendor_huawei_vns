@@ -1,0 +1,14 @@
+#DTS2016102706483 m00345783  20161027 begin
+cdma.dormancy.mode=1
+cdma.dormancy.screen=3
+#DTS2016102706483 m00345783  20161027 end
+gsm.fastdormancy.mode=3
+ro.product.locale.language=zh
+ro.product.locale.region=CN
+ro.config.hw_optb=156
+ro.config.hw_pop_unsupport_lte=true
+ro.config.enable_rms=true
+ro.sys.ping_bf_dorecovery=true
+ro.config.hw_nlp=com.amap.android.ams
+ro.product.locale=zh-Hans-CN
+ro.setupwizard.mode=DISABLED

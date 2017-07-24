@@ -1,3 +1,4 @@
+gsm.fastdormancy.mode=0
 ro.product.locale.language=en
 ro.product.locale.region=US
 ro.config.hw_optb=999
@@ -12,5 +13,24 @@ ro.com.google.clientidbase.yt=android-huawei
 ro.com.google.clientidbase=android-huawei
 #AR0003ECN0  xiekaiming WX278091 20151118  end
 ro.config.show_epg_menu=false
+#DTS2016051804693 gwx325940 20160715 begin
+ro.config.hw_use_browser_ua=http://wap1.huawei.com/uaprof/HUAWEI_%s_UAProfile.xml
+#DTS2016051804693 gwx325940 20160715 end
+ro.config.spare_ntp_server=ntp.sjtu.edu.cn,time.windows.com,time.nist.gov,1.cn.pool.ntp.org
+#DTS2016083001531 yanyongjun/00293352 20160830 begin
 ro.config.hw_nfc_on=true
-ro.setupwizard.mode=DISABLED
+#DTS2016083001531 yanyongjun/00293352 20160830 end
+#BEGIN PN:DTS2016090804666 Added by wwx270239 2016/09/12
+ro.cofig.onlinevideo.enabled=false
+ro.cofig.onlinemusic.enabled=false
+#END PN:DTS2016090804666 Added by wwx270239 2016/09/12
+ro.setupwizard.mode=OPTIONAL
+#DTS2016102009124 h00203826 20161107 begin
+#DTS2017021607722 h00203826 20170224 begin
+ro.config.c2dmdelay=10000
+#DTS2017021607722 h00203826 20170224 end
+ro.config.enable_c2dm_delay=true
+#DTS2016102009124 h00203826 20161107 end
+#AR0005PK97 qiuhongwei 00227094 begin
+ro.config.hw_icon_supprot_cut=false
+#AR0005PK97 qiuhongwei 00227094 end

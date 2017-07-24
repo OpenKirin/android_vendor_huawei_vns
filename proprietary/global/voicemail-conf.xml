@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 当前版本号：Global_parameters V3.419
-SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数。 -->
+<!-- 当前版本号：Global_parameters V3.495
+SE13_version 20161114目前包含 217个国家和地区，1334套运营商参数。 -->
 <voicemail version="6">
   <voicemail numeric="60203"
     carrier="etisalat"
@@ -8,7 +8,7 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
     vmtag="voicemail"
   />
   <voicemail numeric="60201"
-    carrier="Mobinil"
+    carrier="Orange EG"
     vmnumber="777"
     vmtag="voicemail"
   />
@@ -842,11 +842,6 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
     vmnumber="07973100123"
     vmtag="voicemail"
   />
-  <voicemail numeric="23415"
-    carrier="Sainsbury's"
-    vmnumber="121"
-    vmtag="voicemail"
-  />
   <voicemail numeric="23594"
     carrier="3"
     vmnumber="+447782333123"
@@ -940,6 +935,16 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
   <voicemail numeric="22233"
     carrier="PosteMobile"
     vmnumber="427242"
+    vmtag="voicemail"
+  />
+  <voicemail numeric="21416"
+    carrier="TeleCable"
+    vmnumber="333"
+    vmtag="voicemail"
+  />
+  <voicemail numeric="22208"
+    carrier="FASTWEB"
+    vmnumber="4141"
     vmtag="voicemail"
   />
   <voicemail numeric="28603"
@@ -1228,7 +1233,7 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
     vmtag="voicemail"
   />
   <voicemail numeric="37001"
-    carrier="Orange"
+    carrier="Altice"
     vmnumber="*777"
     vmtag="voicemail"
   />
@@ -1552,6 +1557,21 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
     vmnumber="500"
     vmtag="voicemail"
   />
+  <voicemail numeric="330120"
+    carrier="Open Mobile"
+    vmnumber="123"
+    vmtag="voicemail"
+  />
+  <voicemail numeric="33000"
+    carrier="Open Mobile"
+    vmnumber="123"
+    vmtag="voicemail"
+  />
+  <voicemail numeric="342800"
+    carrier="Ozone"
+    vmnumber="*123"
+    vmtag="voicemail"
+  />
   <voicemail numeric="72405"
     carrier="Claro"
     vmnumber="*100"
@@ -1674,7 +1694,7 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
   />
   <voicemail numeric="74807"
     carrier="Movistar"
-    vmnumber="*6684"
+    vmnumber="6684"
     vmtag="voicemail"
   />
   <voicemail numeric="73002"

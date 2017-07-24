@@ -92,6 +92,7 @@
     <hwmotion name="motion_flip" value="200" enable="1" support="1" >
         <hwmotion_func name="motion_flip_mute_call" value="201" enable="0" />
         <hwmotion_func name="motion_flip_mute_clock" value="202" enable="0" />
+        <hwmotion_func name="motion_flip_mute_aod" value="203" enable="1" />
     </hwmotion>
     <hwmotion name="motion_proximity" value="300" enable="1" support="1" >
         <hwmotion_func name="motion_proximity_answer" value="301" enable="0" />
@@ -109,6 +110,7 @@
     </hwmotion>
     <hwmotion name="motion_pocket" value="800" enable="1" support="0" >
         <hwmotion_func name="motion_pocket_call_raise" value="801" enable="1" />
+        <hwmotion_func name="motion_pocket_aod" value="802" enable="1" />
     </hwmotion>
     <hwmotion name="motion_activity" value="900" enable="1" support="0" >
         <hwmotion_func name="motion_activity_state" value="901" enable="1" />

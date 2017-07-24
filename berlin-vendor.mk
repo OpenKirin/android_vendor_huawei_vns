@@ -17,15 +17,23 @@ PRODUCT_PACKAGES += \
     GeofenceLocation
 
 PRODUCT_PACKAGES += \
-    com.google.android.media.effects \
-    com.hisi.perfhub \
-    com.huawei.audioalgo \
-    HWJNIFLPLocation
-
-PRODUCT_BOOT_JARS += \
-    HWJNIFLPLocation
+    native_packages.xml
 
 PRODUCT_PACKAGES += \
-    libril
+    27c11b57-14ff-48bf-abbe-92e345092278.sec \
+    hdbd \
+    hw_healthd \
+    oeminfo_nvm_server \
+    teecd
+
+PRODUCT_PACKAGES += \
+    bfgx_and_wifi_cfg \
+    bfgx_cfg \
+    CPU_RAM_SCHED.bin \
+    CPU_RAM_WBS.bin \
+    cr4_asic.bin \
+    cr4_regmem.bin \
+    cr4_regmem_u1.bin \
+    wifi_cfg
 
 $(call inherit-product, vendor/honor/berlin/berlin-vendor-blobs.mk)

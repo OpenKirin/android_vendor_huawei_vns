@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); 
+ * you may not use this file except in compliance with the License. 
+ * You may obtain a copy of the License at 
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0 
+ *
+ * Unless required by applicable law or agreed to in writing, software 
+ * distributed under the License is distributed on an "AS IS" BASIS, 
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+ * See the License for the specific language governing permissions and 
+ * limitations under the License.
+ */
+-->
+
+<launcher_config>
+    <integer name="config_DefaultEffectIndex">0</integer>
+    <!-- DTS2013051501262  yueyi00193929 20130515 begin -->
+    <!-- DTS2016022202208 duyateng dwx324146 20160223 copy to base -->
+    <!-- DTS2013051501262  yueyi00193929 20130515 end -->
+    <!-- DTS2013112612190 c00182858 20131210 begin -->
+    <!-- DTS2014022111998 00217057 20140221 begin -->
+    <bool name="config_orientation_enabled">true</bool>
+    <!-- DTS2014022111998 00217057 20140221 end -->
+    <!-- DTS2013112612190 c00182858 20131210 end -->
+    <bool name="config_CloudFolderEnabled">true</bool>
+    <!-- DTS2016022202208 duyateng dwx324146 20160223 copy to base -->
+    <integer name="config_cellsDefaultLayoutIndex">2</integer>
+    <integer name="config_cellsDrawerLayoutIndex">2</integer>
+    <!-- DTS2014122301039 z84020356 20141225 begin -->
+    <item name="config_IconTitleSize">10.5</item>
+    <!-- DTS2014122301039 z84020356 20141225 end -->
+    <bool name="config_hwReadEnable" reset="true">true</bool>
+    <integer name="config_DesktopDefaultScreen">0</integer>
+    <integer name="config_DesktopDrawerScreen">0</integer>
+    <integer name="config_DesktopScreenNum">2</integer>
+    <integer name="config_DesktopDrawerScreenNum">2</integer>
+    <string-array name="config_SuggestionApp">
+        <item name="suggestionapp">com.huawei.systemmanager/com.huawei.systemmanager.mainscreen.MainScreenActivity</item>
+        <item name="suggestionapp">com.huawei.hwvplayer.youku/com.huawei.hwvplayer.framework.MainActivity</item>
+        <item name="suggestionapp">com.android.mediacenter/com.android.mediacenter.PageActivity</item>
+        <item name="suggestionapp">com.android.gallery3d/com.huawei.gallery.app.GalleryMain</item>
+        <item name="suggestionapp">com.android.email/com.android.email.activity.Welcome</item>
+        <item name="suggestionapp">com.huawei.camera/com.huawei.camera</item>
+        <item name="suggestionapp">com.android.systemui/com.android.systemui.flashlight.FlashlightActivity</item>
+    </string-array>
+</launcher_config>

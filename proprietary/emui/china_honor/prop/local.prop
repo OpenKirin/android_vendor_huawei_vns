@@ -1,0 +1,4 @@
+ro.config.ringtone=Honor.ogg
+ro.config.ringtone2=Huawei_Tune_Living.ogg
+ro.config.hw_nlp=com.baidu.map.location
+ro.config.hw_vassistant_honor=true

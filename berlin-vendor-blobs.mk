@@ -14,6 +14,3 @@
 
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/honor/berlin/proprietary/,system/)
-
-PRODUCT_COPY_FILES += \
-	$(call find-copy-subdir-files,*,vendor/honor/berlin/root/,root/)

@@ -83,5 +83,6 @@
     <widget launcher:className="com.huawei.android.totemweather.widget.mulan.MulanWidgetWeatherProvider" />
     <!-- DTS2014062014864 add baidu searchbox widget -->
     <widget launcher:className="com.baidu.searchbox.widget.TransSearchWidgetProvider" />
-    <widget launcher:className="com.huawei.healthcloud.phonestepcounter.widget.HealthCloudWidget4x1" />
+    <!-- DTS2017011201092 add HealthSport2.0 widget -->
+    <widget launcher:className="com.huawei.health.ui.widget.HealthSportWidget" />
 </widgets>

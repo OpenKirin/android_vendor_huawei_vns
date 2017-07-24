@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- 当前版本号：Global_parameters V3.419
-SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数。 -->
+<!-- 当前版本号：Global_parameters V3.495
+SE13_version 20161114目前包含 217个国家和地区，1334套运营商参数。 -->
 <numMatchs version="1">
   <numMatch name="etisalat"
     mcc="602"
     mnc="03"
     num_match="8"
   />
-  <numMatch name="Mobinil"
+  <numMatch name="Orange EG"
     mcc="602"
     mnc="01"
     num_match="8"
@@ -150,7 +150,7 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
   <numMatch name="Inwi"
     mcc="604"
     mnc="02"
-    num_match="9"
+    num_match="8"
   />
   <numMatch name="Libyana"
     mcc="606"
@@ -1451,6 +1451,11 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
     mnc="24"
     num_match="7"
   />
+  <numMatch name="電信"
+    mcc="454"
+    mnc="31"
+    num_match="7"
+  />
   <numMatch name="Maxis"
     mcc="502"
     mnc="12"
@@ -2096,13 +2101,6 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
     max_message_size="307200"
     sms_to_mms_textthreshold="11"
   />
-  <numMatch name="Sainsbury's"
-    mcc="234"
-    mnc="15"
-    num_match="10"
-    max_message_size="307200"
-    sms_to_mms_textthreshold="11"
-  />
   <numMatch name="BT Mobile"
     mcc="234"
     mnc="08"
@@ -2119,6 +2117,7 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
     mcc="262"
     mnc="02"
     num_match="10"
+    sms_7bit_enabled="1"
     max_message_size="307200"
     sms_to_mms_textthreshold="5"
   />
@@ -2259,6 +2258,17 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
   <numMatch name="PosteMobile"
     mcc="222"
     mnc="33"
+    num_match="7"
+  />
+  <numMatch name="TeleCable"
+    mcc="214"
+    mnc="16"
+    num_match="9"
+    sms_7bit_enabled="1"
+  />
+  <numMatch name="FASTWEB"
+    mcc="222"
+    mnc="08"
     num_match="7"
   />
   <numMatch name="du"
@@ -2434,29 +2444,25 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
   <numMatch name="Avea"
     mcc="286"
     mnc="03"
-    num_match="11"
-    num_match_short="7"
+    num_match="10"
     sms_coding_national="1"
   />
   <numMatch name="Avea"
     mcc="286"
     mnc="04"
-    num_match="11"
-    num_match_short="7"
+    num_match="10"
     sms_coding_national="1"
   />
   <numMatch name="Turkcell"
     mcc="286"
     mnc="01"
-    num_match="11"
-    num_match_short="7"
+    num_match="10"
     sms_coding_national="1"
   />
   <numMatch name="Vodafone"
     mcc="286"
     mnc="02"
-    num_match="11"
-    num_match_short="7"
+    num_match="10"
     sms_coding_national="1"
     max_message_size="307200"
     sms_to_mms_textthreshold="11"
@@ -2656,11 +2662,6 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
   <numMatch name="ADAT"
     mcc="310"
     mnc="690"
-    num_match="10"
-  />
-  <numMatch name="Airfire"
-    mcc="310"
-    mnc="640"
     num_match="10"
   />
   <numMatch name="CBW"
@@ -3266,7 +3267,7 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
     max_message_size="307200"
     sms_to_mms_textthreshold="13"
   />
-  <numMatch name="Orange"
+  <numMatch name="Altice"
     mcc="370"
     mnc="01"
     num_match="7"
@@ -3682,6 +3683,22 @@ SE13_version 20160222目前包含 217个国家和地区，1334套运营商参数
     mcc="364"
     mnc="490"
     num_match="7"
+  />
+  <numMatch name="Open Mobile"
+    mcc="330"
+    mnc="120"
+    num_match="7"
+  />
+  <numMatch name="Open Mobile"
+    mcc="330"
+    mnc="00"
+    num_match="7"
+  />
+  <numMatch name="Ozone"
+    mcc="342"
+    mnc="800"
+    num_match="7"
+    sms_7bit_enabled="1"
   />
   <numMatch name="Claro"
     mcc="724"

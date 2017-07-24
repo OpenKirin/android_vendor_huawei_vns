@@ -1,0 +1,14 @@
+ro.build.hw_emui_lite.enable=true
+# BEGIN PN:DTS2016051907813,Modified by dwx209861, 2016/05/23
+fw.max_users=1
+fw.show_multiuserui=0
+# END   PN:DTS2016051907813,Modified by dwx209861, 2016/05/23
+# DTS2016060606663 shiyuanchang/00271386 20160704 begin
+ro.config.hw_support_clone_app=false
+# DTS2016060606663 shiyuanchang/00271386 20160704 end
+# BEGIN PN:DTS2016102600951,Modified by wwx270385, 2016/10/26
+hw.lcd.density.scale=800
+# END   PN:DTS2016102600951,Modified by wwx270385, 2016/10/26
+#BEGIN PN:DTS2017022209630 Added by cwx283822 2017/03/08
+ro.config.hw_emui_dbsearch_lite=true
+#END PN:DTS2017022209630 Added by cwx283822 2017/03/08

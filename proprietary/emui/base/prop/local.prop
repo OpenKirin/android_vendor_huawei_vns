@@ -1,8 +1,8 @@
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
-ro.build.version.emui=EmotionUI_4.1
-ro.config.ringtone=Dream_It_Possible.ogg
-ro.config.ringtone2=Huawei_Tune.ogg
-ro.config.alarm_alert=Creamy.ogg
+ro.build.version.emui=EmotionUI_5.0
+ro.config.ringtone=Huawei_Tune_Living.ogg
+ro.config.ringtone2=Huawei_Tune_Clean.ogg
+ro.config.alarm_alert=Aegean_Sea.ogg
 ro.config.notification_sound=Bongo.ogg
 ro.config.hw_enable_merge=true
 ro.config.app_big_icon_size=192
@@ -23,9 +23,35 @@ ro.huawei.cust.oma=false
 ro.huawei.cust.oma_drm=false
 ro.config.hwtheme=1
 ro.config.hw_allow_rs_mms=true
+ro.config.hw_watermark=false
 ro.config.hw_hungtasklist=whitelist,system_server,SurfaceFlinger
 ro.config.hw_power_saving=true
 ro.config.attach_ip_type=IPV4V6
 fw.show_multiuserui=1
 fw.max_users=4
+ro.config.fp_navigation=true
+ro.com.google.clientidbase=android-huawei
+ro.config.updatelocation=true
+# DTS2016060606663 shiyuanchang/00271386 20160704 begin
+ro.config.hw_support_clone_app=true
+# DTS2016060606663 shiyuanchang/00271386 20160704 end
+# AR0003N0CG zhangxin 329966 volte sim match begin
+ro.config.hw_volte_dyn=true
+# AR0003N0CG zhangxin 329966 volte sim match end
+# DTS2016071504271 jiacan 00373435 iaware switch begin
+ro.config.enable_iaware=true
+# DTS2016071504271 jiacan 00373435 iaware switch end
+# DTS2016092003327 xugang 00350031 perfhub fling switch begin
+ro.config.enable_perfhub_fling=false
+# DTS2016092003327 xugang 00350031 perfhub fling switch end
+#BEGIN PN: DTS2016092708075, Added by w00364765,2016/10/08
+ro.control.sleeplog=true
+#END PN: DTS2016092708075, Added by w00364765,2016/10/08
 
+ro.config.hw_em_solution_ver=B077
+
+ro.comp.system_version=System 5.0.0.57(0F4A)
+
+ro.confg.hw_systemversion=System 5.0.0.57(0F4A)
+
+ro.build.diaplay.id=System 5.0.0.57(0F4A)

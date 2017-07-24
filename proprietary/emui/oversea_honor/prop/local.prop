@@ -1,1 +1,6 @@
-ro.config.ringtone=Huawei_Tune_Orchestral.ogg
+ro.config.ringtone=Huawei_Tune_Living.ogg
+ro.config.ringtone2=Huawei_Tune_Clean.ogg
+#BEGIN PN:DTS2016090804666 Added by wwx270239 2016/09/12
+ro.cofig.onlinevideo.enabled=false
+ro.cofig.onlinemusic.enabled=false
+#END PN:DTS2016090804666 Added by wwx270239 2016/09/12

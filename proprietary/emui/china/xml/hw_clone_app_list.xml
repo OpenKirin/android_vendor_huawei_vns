@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DTS2016060606663 shiyuanchang/00271386 20160704 created -->
+<AppClone>
+    <package name="com.tencent.mm"/>
+    <package name="com.tencent.mobileqq"/>
+</AppClone>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2009, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources>
+  <string default_input_method="com.baidu.input_huawei/.ImeService" />
+  <string custom_certify_picture="/system/emui/china/media/certify_infor.png" />
+  <string white_languages="en_US,ar_EG,de_DE,bs_BA,es_ES,uk_UA,fr_FR,pt_PT,ru_RU,zh_CN,zh_TW,zh_HK,es_US,cs_CZ,da_DK,el_GR,hu_HU,pt_BR,it_IT,ja_JP,lt_LT,lv_LV,bg_BG,nb_NO,pl_PL,ro_RO,et_EE,sk_SK,sr_Latn,sv_SE,tr_TR,th_TH,fi_FI,in_ID,mk_MK,sl_SI,ms_MY,vi_VN,hr_HR,nl_NL,ca_ES,hi_IN,ko_KR,en_GB,iw_IL,eu_ES,gl_ES,bo_CN,ka_GE,az_AZ,uz_UZ,km_KH,si_LK,ur_PK,kk_KZ,lo_LA,be_BY,bn_BD,ne_NP,tl_PH,jv_Latn" />
+  <string hw_theme_support_hwid="true" /> 
+  <string hw_theme_support_pay="true" />
+  <integer is_show_google="0"/>
+  <string enable_get_location="com.huawei.parentcontrol"/>
+</resources>
+

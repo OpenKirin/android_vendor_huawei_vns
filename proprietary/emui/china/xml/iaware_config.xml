@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- !!!!!!!!!!!!warnning!!!!!!!!!!!!  -->
+<!-- iawareversion's value must be String like "1.0", configversion's value must be int like "2" -->
+<!-- upon the item iaware, no allowed add any item -->
+<!-- cloudupdate will use this attr enable 1 means open iaware 0 means close iaware -->
+<iaware enable="1" iawareversion="1.0" configversion="12">
+    <feature name="Memory">
+        <config name="MemoryConstant" >
+            <item ramsize="2048">
+                <averageAppUss>20</averageAppUss>
+                <lowCpuLoad>30</lowCpuLoad>
+                <highCpuLoad>60</highCpuLoad>
+                <emergencyMemory>350</emergencyMemory>
+                <bigMemCriticalMemory>400</bigMemCriticalMemory>
+                <defaultCriticalMemory>600</defaultCriticalMemory>
+                <normalMemory>900</normalMemory>
+                <reservedZram>100</reservedZram>
+                <swappiness>150</swappiness>
+                <direct_swappiness>60</direct_swappiness>
+                <extra_free_kbytes>61440</extra_free_kbytes>
+                <protect_lru_limit>30 40 0</protect_lru_limit>
+            </item>
+            <item ramsize="3072">
+                <averageAppUss>20</averageAppUss>
+                <lowCpuLoad>30</lowCpuLoad>
+                <highCpuLoad>60</highCpuLoad>
+                <emergencyMemory>400</emergencyMemory>
+                <bigMemCriticalMemory>450</bigMemCriticalMemory>
+                <defaultCriticalMemory>800</defaultCriticalMemory>
+                <normalMemory>1228</normalMemory>
+                <reservedZram>100</reservedZram>
+                <swappiness>200</swappiness>
+                <direct_swappiness>0</direct_swappiness>
+                <extra_free_kbytes>61440</extra_free_kbytes>
+                <protect_lru_limit>60 80 0</protect_lru_limit>
+            </item>
+            <item ramsize="4096">
+                <averageAppUss>20</averageAppUss>
+                <lowCpuLoad>30</lowCpuLoad>
+                <highCpuLoad>60</highCpuLoad>
+                <emergencyMemory>400</emergencyMemory>
+                <bigMemCriticalMemory>450</bigMemCriticalMemory>
+                <defaultCriticalMemory>800</defaultCriticalMemory>
+                <normalMemory>1228</normalMemory>
+                <reservedZram>100</reservedZram>
+                <swappiness>100</swappiness>
+                <direct_swappiness>60</direct_swappiness>
+                <extra_free_kbytes>61440</extra_free_kbytes>
+                <protect_lru_limit>60 80 0</protect_lru_limit>
+            </item>
+            <item ramsize="6144">
+                <averageAppUss>20</averageAppUss>
+                <lowCpuLoad>30</lowCpuLoad>
+                <highCpuLoad>60</highCpuLoad>
+                <emergencyMemory>300</emergencyMemory>
+                <bigMemCriticalMemory>450</bigMemCriticalMemory>
+                <defaultCriticalMemory>600</defaultCriticalMemory>
+                <normalMemory>1024</normalMemory>
+                <reservedZram>100</reservedZram>
+                <numProcessLimit>64</numProcessLimit>
+            </item>
+        </config>
+        <config name="Memoryitem">
+            <item scene="idle">
+                <action name="reclaim"></action>
+            </item>
+            <item scene="default">
+                <action name="kill"></action>
+            </item>
+            <item scene="BigMem">
+                <action name="quickkill"></action>
+            </item>
+        </config>
+        <config name="FileCache">
+            <item name="file" level="1">
+                <file>/data/dalvik-cache/arm64/system@framework@boot-framework.oat</file>
+                <file>/data/dalvik-cache/arm64/system@framework@boot.art</file>
+                <file>/data/dalvik-cache/arm64/system@framework@boot.oat</file>
+                <file>/data/dalvik-cache/arm64/system@framework@boot-core-libart.oat</file>
+            </item>
+            <item name="file" level="2">
+                <file>/system/priv-app/Mms/oat/arm64/Mms.odex</file>
+                <file>/data/user_de/0/com.android.providers.telephony/databases/mmssms.db</file>
+                <file>/system/usr/icu/icudt56l.dat</file>
+                <file>/system/priv-app/Mms/Mms.apk</file>
+                <file>/data/user/0/com.android.mms/databases/smssdk.db</file>
+                <file>/system/framework/oat/arm64/com.android.contacts.separated.odex</file>
+                <file>/system/priv-app/Contacts/oat/arm64/Contacts.odex</file>
+                <file>/data/user/0/com.android.providers.contacts/databases/contacts2.db</file>
+                <file>/system/priv-app/ContactsProvider/oat/arm64/ContactsProvider.odex</file>
+                <file>/data/data/com.android.gallery3d/databases/gallery.db</file>
+                <file>/data/dalvik-cache/arm/system@priv-app@Gallery2@Gallery2.apk@classes.dex</file>
+                <file>/data/dalvik-cache/arm/data@hw_init@version@special_cust@NXT-AL10@all@cn@app@Browser_uc@Browser_uc.apk@classes.dex</file>
+                <file>/system/priv-app/HwCamera2/oat/arm/HwCamera2.odex</file>
+                <file>/data/data/com.android.providers.media/databases/external.db</file>
+            </item>
+        </config>
+    </feature>
+
+    <feature name="CPU">
+        <config name="control_group">
+            <item type="group_bg">
+                <whitelist>com.huawei.imonitor;</whitelist>
+            </item>
+        </config>
+    </feature>
+
+    <feature name="AppManagement">
+        <config name="HabitFilterList">
+            <item>
+                <packageName>com.android.incallui</packageName>
+                <packageName>com.android.packageinstaller</packageName>
+                <packageName>com.android.settings</packageName>
+                <packageName>com.android.systemui</packageName>
+                <packageName>com.android.deskclock</packageName>
+                <packageName>com.android.mms</packageName>
+                <packageName>com.android.contacts</packageName>
+                <packageName>com.huawei.systemmanager</packageName>
+                <packageName>com.huawei.hwid</packageName>
+                <packageName>com.huawei.vassistant</packageName>
+                <packageName>com.huawei.android.hwouc</packageName>
+                <packageName>com.huawei.android.internal.app</packageName>
+                <packageName>com.huawei.gamebox</packageName>
+            </item>
+        </config>
+    </feature>
+
+    <feature name="Softresource">
+    </feature>
+
+    <feature name="Preload">
+        <config name="PreloadConstant">
+            <item ramsize="2048">
+                <predictAppMemory>30</predictAppMemory>
+                <increaseCriticalMemory>100</increaseCriticalMemory>
+                <frequentAppNum>0</frequentAppNum>
+                <baseStartTime>3000</baseStartTime>
+                <packageName>com.android.contacts</packageName>
+                <packageName>com.huawei.android.launcher</packageName>
+            </item>
+            <item ramsize="3072">
+                <predictAppMemory>30</predictAppMemory>
+                <increaseCriticalMemory>100</increaseCriticalMemory>
+                <frequentAppNum>6</frequentAppNum>
+                <baseStartTime>3000</baseStartTime>
+                <packageName>com.android.contacts</packageName>
+                <packageName>com.android.mms</packageName>
+                <packageName>com.huawei.android.launcher</packageName>
+            </item>
+            <item ramsize="4096">
+                <predictAppMemory>30</predictAppMemory>
+                <increaseCriticalMemory>100</increaseCriticalMemory>
+                <frequentAppNum>6</frequentAppNum>
+                <baseStartTime>3000</baseStartTime>
+                <packageName>com.android.contacts</packageName>
+                <packageName>com.android.mms</packageName>
+                <packageName>com.huawei.android.launcher</packageName>
+            </item>
+            <item ramsize="6144">
+                <predictAppMemory>30</predictAppMemory>
+                <increaseCriticalMemory>100</increaseCriticalMemory>
+                <frequentAppNum>10</frequentAppNum>
+                <baseStartTime>3000</baseStartTime>
+                <packageName>com.android.contacts</packageName>
+                <packageName>com.android.mms</packageName>
+                <packageName>com.huawei.android.launcher</packageName>
+            </item>
+        </config>
+    </feature>
+
+    <feature name="ThirdApp">
+        <config name="AppList">
+            <item>
+                <packageName>com.tencent.mm</packageName>
+                <supportVersion>350-1000000;</supportVersion>
+                <flingVelocity>24000</flingVelocity>
+                <idleVelocity>8000</idleVelocity>
+            </item>
+        </config>
+        <config name="CacheList">
+            <item>
+                <packageName>com.tencent.mm</packageName>
+                <supportVersion>350-1000000;</supportVersion>
+                <threadName>galleryDecodeHanlderThread</threadName>
+                <cacheVersion>12-20;</cacheVersion>
+            </item>
+        </config>
+    </feature>
+</iaware>

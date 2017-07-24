@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<MMIAlogInfo>
-<!--1:leftRight 2:rightLeft 3:upDown 4:downUp-->
-    <CameraType>3</CameraType>
-    <calib_width>1600</calib_width>
-    <calib_height>1200</calib_height>
-	<!--180 natasha出图sensor扫描方向旋转180-->
-	<SensorScanRotation>0</SensorScanRotation>
-</MMIAlogInfo>

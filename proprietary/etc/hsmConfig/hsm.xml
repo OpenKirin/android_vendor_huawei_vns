@@ -99,7 +99,7 @@
                 </Cause>
                 <Cause id="7">
                     <CauseDesc>中电平下有中等误码，怀疑modem问题</CauseDesc>
-                    <CauseAnalyse>平均误帧率为[fer_average]%，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseAnalyse>平均误帧率为[fer_average]，电平能量为-[level_average]dbm</CauseAnalyse>
                     <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
                 </Cause>
                 <Cause id="8">
@@ -130,7 +130,42 @@
                 <Cause id="13">
                     <CauseDesc>HIFI DMA搬移问题</CauseDesc>
                     <CauseAnalyse>发现[hifi_dma_num]次HIFI DMA没有搬移数据。</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
+                </Cause>
+                <Cause id="14">
+                    <CauseDesc>该网络制式未做智能分析</CauseDesc>
+                    <CauseAnalyse>当前还缺乏有效分析手段，敬请期待。</CauseAnalyse>
                     <CauseSuggestion>为提高研发效率，尽快提单</CauseSuggestion>
+                </Cause>
+                <Cause id="15">
+                    <CauseDesc>疑似本端问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]。</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
+                </Cause>
+                <Cause id="16">
+                    <CauseDesc>疑似Modem存在异常问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]，电平能量为-[level_average]dbm</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
+                </Cause>
+                <Cause id="30">
+                    <CauseDesc>Modem侧未检测到异常</CauseDesc>
+                    <CauseAnalyse>当前还缺乏有效分析手段，敬请期待。</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
+                </Cause>
+                <Cause id="31">
+                    <CauseDesc>相对明确是对端或者网侧异常</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]。</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="32">
+                    <CauseDesc>信号质量不好导致存在丢包和抖动，怀疑网络问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]。</CauseAnalyse>
+                    <CauseSuggestion>非问题，不用提单</CauseSuggestion>
+                </Cause>
+                <Cause id="33">
+                    <CauseDesc>疑似UE问题</CauseDesc>
+                    <CauseAnalyse>平均误帧率为[fer_average]。</CauseAnalyse>
+                    <CauseSuggestion>为提高研发效率，尽快上传</CauseSuggestion>
                 </Cause>
             </Causes>
             <Phenomenons>
@@ -144,6 +179,7 @@
                 <Phenomenon id="8">低分</Phenomenon>
                 <Phenomenon id="9">时序冲突</Phenomenon>
                 <Phenomenon id="10">啸声</Phenomenon>
+                <Phenomenon id="11">回声</Phenomenon>
             </Phenomenons>
             <CodecTypes>
                 <CodecType id="0">AMRNB</CodecType>
@@ -174,11 +210,27 @@
                 <BSDPosition id="7">LINEOUT</BSDPosition>
                 <BSDPosition id="8">MODEM</BSDPosition>
                 <BSDPosition id="9">HIFI</BSDPosition>
+                <BSDPosition id="10">DMA</BSDPosition>
+                <BSDPosition id="11">CODEC</BSDPosition>
             </BSDPositions>
+            <DevTypes>
+                <DevType id="1">听筒</DevType>
+                <DevType id="2">免提</DevType>
+                <DevType id="4">四段式耳机</DevType>
+                <DevType id="8">三段式耳机</DevType>
+                <DevType id="16">SCO蓝牙</DevType>
+                <DevType id="32">SCO蓝牙</DevType>
+                <DevType id="64">SCO蓝牙</DevType>
+                <DevType id="128">A2DP蓝牙</DevType>
+                <DevType id="256">A2DP蓝牙</DevType>
+                <DevType id="512">A2DP蓝牙</DevType>
+                <DevType id="1024">未知设备</DevType>
+                <DevType id="2048">USBVOICE设备</DevType>
+            </DevTypes>
             <DescriptionTemplate>
                 [本次通话可能存在]：[phenomenon] 
                 [自动分析原因]：[cause_description] 
-                [分析依据]：通信方式为[net_mode]，声码器类型为[codec_type]，检测到问题的位置为[position]，[cause_analyse] 
+                [分析依据]：通信方式为[net_mode]，声码器类型为[codec_type]，检测到问题的位置为[position]，[cause_analyse],设备模式为[dev_type]
                 [建议]：[cause_suggestion]。
             </DescriptionTemplate>
         </BSD>

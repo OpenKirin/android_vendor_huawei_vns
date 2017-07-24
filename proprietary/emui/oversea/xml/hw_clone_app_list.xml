@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DTS2016080802881 shiyuanchang/00271386 20160822 created -->
+<AppClone>
+    <package name="com.whatsapp"/>
+    <package name="com.facebook.katana"/>
+</AppClone>

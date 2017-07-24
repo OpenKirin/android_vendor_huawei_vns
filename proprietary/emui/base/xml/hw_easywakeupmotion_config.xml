@@ -27,12 +27,12 @@
 	<EasyWakeUpMotion name="EasyWakeUp_Flick_left" support="0" value="0" flag="2" keycode="-1" />
 	<EasyWakeUpMotion name="EasyWakeUp_Flick_Down" support="0" value="0" flag="3" keycode="-1" />
 	<EasyWakeUpMotion name="EasyWakeUp_Flick_Up" support="0" value="0" flag="4" keycode="-1" />
-	<EasyWakeUpMotion name="EasyWakeUp_Letter_ALL" support="1" value="0" flag="13" keycode="-1" />
+	<EasyWakeUpMotion name="EasyWakeUp_Letter_ALL" support="0" value="0" flag="13" keycode="-1" />
 	<EasyWakeUpMotion name="EasyWakeUp_Letter_O" support="0" value="0" flag="5" keycode="-1" />
-	<EasyWakeUpMotion name="EasyWakeUp_Letter_C" support="1" value="1" flag="7" keycode="138" />
-	<EasyWakeUpMotion name="EasyWakeUp_Letter_E" support="1" value="1" flag="8" keycode="139" />
-	<EasyWakeUpMotion name="EasyWakeUp_Letter_M" support="1" value="1" flag="9" keycode="140" />
-	<EasyWakeUpMotion name="EasyWakeUp_Letter_W" support="1" value="1" flag="10" keycode="141" />
+	<EasyWakeUpMotion name="EasyWakeUp_Letter_C" support="0" value="1" flag="7" keycode="138" />
+	<EasyWakeUpMotion name="EasyWakeUp_Letter_E" support="0" value="1" flag="8" keycode="139" />
+	<EasyWakeUpMotion name="EasyWakeUp_Letter_M" support="0" value="1" flag="9" keycode="140" />
+	<EasyWakeUpMotion name="EasyWakeUp_Letter_W" support="0" value="1" flag="10" keycode="141" />
 	<MaxKeyCode name="MaxKeyCode" value="142" />
 	<MinKeyCode name="MinKeyCode" value="131" />
 	<DriverFileLength name="DriverFileLength" value="16" />
