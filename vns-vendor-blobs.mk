@@ -12,28 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_PACKAGES += \
-    gnss_supl20service_hisi \
-    GeofenceLocation
-
-PRODUCT_PACKAGES += \
-    native_packages.xml
-
-PRODUCT_PACKAGES += \
-    27c11b57-14ff-48bf-abbe-92e345092278.sec \
-    hdbd \
-    hw_healthd \
-    oeminfo_nvm_server \
-    teecd
-
-PRODUCT_PACKAGES += \
-    bfgx_and_wifi_cfg \
-    bfgx_cfg \
-    CPU_RAM_SCHED.bin \
-    CPU_RAM_WBS.bin \
-    cr4_asic.bin \
-    cr4_regmem.bin \
-    cr4_regmem_u1.bin \
-    wifi_cfg
-
-$(call inherit-product, vendor/honor/berlin/berlin-vendor-blobs.mk)
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/huawei/vns/proprietary/,system/)

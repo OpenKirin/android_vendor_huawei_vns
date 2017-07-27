@@ -14,11 +14,11 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter berlin,$(TARGET_DEVICE)),)
+ifneq ($(filter vns,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := gnss_supl20service_hisi
-LOCAL_MODULE_OWNER := honor
+LOCAL_MODULE_OWNER := huawei
 LOCAL_SRC_FILES := system/app/gnss_supl20service_hisi/gnss_supl20service_hisi.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -28,7 +28,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := GeofenceLocation
-LOCAL_MODULE_OWNER := honor
+LOCAL_MODULE_OWNER := huawei
 LOCAL_SRC_FILES := system/priv-app/GeofenceLocation/GeofenceLocation.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
